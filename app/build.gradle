@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.2"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.bank.shellx"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        //传入你依赖的rxjava版本，可传入rxjava2、rxjava3，依赖RxJava时必须
+                        rxhttp_rxjava: 'rxjava2'
+
+                ]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.android.support:wearable:2.8.1'
+    implementation 'com.google.android.gms:play-services-wearable:17.0.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.wear:wear:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    compileOnly 'com.google.android.wearable:wearable:2.8.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation "androidx.viewpager2:viewpager2:1.0.0-alpha02"
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.drawthink:expandable-recyclerview:0.0.3'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.permissionx.guolindev:permissionx:1.4.0'
+    implementation 'com.ljx.rxlife2:rxlife-rxjava:2.0.0'
+    implementation 'com.ljx.rxhttp:rxhttp:2.5.3'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    annotationProcessor 'com.ljx.rxhttp:rxhttp-compiler:2.5.3'
+    compile 'com.yanzhenjie:andserver:1.0.2'
+    compile "org.java-websocket:Java-WebSocket:1.5.1"
+}

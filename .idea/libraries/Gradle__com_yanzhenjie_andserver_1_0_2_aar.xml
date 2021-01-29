@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yanzhenjie:andserver:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8caf40ecfbf2fbf7841d5d03ff924ec2/jetified-andserver-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8caf40ecfbf2fbf7841d5d03ff924ec2/jetified-andserver-1.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8caf40ecfbf2fbf7841d5d03ff924ec2/jetified-andserver-1.0.2/jars/libs/commons-fileupload-1.3.2.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8caf40ecfbf2fbf7841d5d03ff924ec2/jetified-andserver-1.0.2/jars/libs/commons-io-2.5.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8caf40ecfbf2fbf7841d5d03ff924ec2/jetified-andserver-1.0.2/jars/libs/org.apache.http.legacy.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/andserver/1.0.2/a05619a0425b0d34b5f50e279d498b92d04a02f4/andserver-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/andserver/1.0.2/dd8e0a0d37a780f88041404ec644a9aeab7d5319/andserver-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

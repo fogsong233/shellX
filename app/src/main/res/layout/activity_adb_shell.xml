@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:padding="15dp"
+    tools:context=".ui.adb.AdbShellActivity" >
+
+    <ScrollView
+    	android:id="@+id/shellScroller"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_above="@+id/command_linear"
+    	android:layout_alignParentLeft="true"
+    	android:layout_alignParentRight="true"
+    	android:scrollbars="vertical"
+    	android:fillViewport="true"
+        android:layout_alignParentTop="true">
+
+		<TextView
+			android:id="@+id/shellView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textIsSelectable="true"
+			android:scrollbars="vertical" />
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/shellScroller"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/command_linear"
+		android:layout_alignParentRight="true">
+
+        <EditText
+            android:id="@+id/command"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+			android:layout_weight="3"
+            android:ems="10" />
+	    <com.google.android.material.button.MaterialButton
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/adb_shell_submit"
+			android:text="射"
+			android:textSize="10dp"
+			android:layout_weight="1"/>
+	</LinearLayout>
+
+	<requestFocus />
+
+</RelativeLayout>
